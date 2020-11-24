@@ -16,6 +16,7 @@
 		F8A9BA50256746E500225808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A9BA4E256746E500225808 /* LaunchScreen.storyboard */; };
 		F8A9BA5B256746E600225808 /* magic8BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A9BA5A256746E600225808 /* magic8BallTests.swift */; };
 		F8A9BA66256746E600225808 /* magic8BallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A9BA65256746E600225808 /* magic8BallUITests.swift */; };
+		F8A9BA77256C8B9600225808 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A9BA76256C8B9600225808 /* newViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F8A9BA61256746E600225808 /* magic8BallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magic8BallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A9BA65256746E600225808 /* magic8BallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magic8BallUITests.swift; sourceTree = "<group>"; };
 		F8A9BA67256746E600225808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A9BA76256C8B9600225808 /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				F8A9BA40256746E400225808 /* AppDelegate.swift */,
 				F8A9BA42256746E400225808 /* SceneDelegate.swift */,
 				F8A9BA44256746E400225808 /* ViewController.swift */,
+				F8A9BA76256C8B9600225808 /* newViewController.swift */,
 				F8A9BA46256746E400225808 /* Main.storyboard */,
 				F8A9BA4C256746E500225808 /* Assets.xcassets */,
 				F8A9BA4E256746E500225808 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A9BA77256C8B9600225808 /* newViewController.swift in Sources */,
 				F8A9BA45256746E400225808 /* ViewController.swift in Sources */,
 				F8A9BA41256746E400225808 /* AppDelegate.swift in Sources */,
 				F8A9BA43256746E400225808 /* SceneDelegate.swift in Sources */,

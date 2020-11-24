@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="newViewController" customModule="magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-Nq-Gp6">
+                                <rect key="frame" x="20" y="179" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="8Hs-Da-bcR"/>
+                                    <constraint firstAttribute="height" constant="46" id="s0l-HO-qEX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-Bi-VRT">
+                                <rect key="frame" x="20" y="264" width="374" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="KS2-8i-Gjc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="237" id="N6j-LD-gwM"/>
+                                    <constraint firstAttribute="width" constant="374" id="Xa4-kJ-Qbg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="cbX-w4-Ddj"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="237" id="dHd-YI-mQI"/>
+                                    <constraint firstAttribute="height" constant="237" id="dSb-cs-xUp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5F-ju-Q0i">
+                                <rect key="frame" x="20" y="611" width="374" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="60d-em-Czc"/>
+                                    <constraint firstAttribute="width" constant="374" id="ZmH-54-RYe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Ask Me Here">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mag8AskButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXR-Wb-Q5e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.4229564702177312" green="0.48768718715530046" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="x5F-ju-Q0i" firstAttribute="top" secondItem="FRU-Bi-VRT" secondAttribute="bottom" constant="110" id="5im-wA-4ve"/>
+                            <constraint firstItem="FRU-Bi-VRT" firstAttribute="top" secondItem="4WB-Nq-Gp6" secondAttribute="bottom" constant="39" id="G9P-Oh-huB"/>
+                            <constraint firstItem="FRU-Bi-VRT" firstAttribute="top" secondItem="4WB-Nq-Gp6" secondAttribute="bottom" constant="39" id="Hgt-Zq-cs8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRU-Bi-VRT" secondAttribute="trailing" constant="20" id="RGH-Sl-EU6"/>
+                            <constraint firstItem="4WB-Nq-Gp6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="Spa-n0-clS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRU-Bi-VRT" secondAttribute="trailing" constant="20" id="VcH-ci-a59"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4WB-Nq-Gp6" secondAttribute="trailing" constant="20" id="WNz-Vt-gW4"/>
+                            <constraint firstItem="FRU-Bi-VRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WdE-ih-V3h"/>
+                            <constraint firstItem="FRU-Bi-VRT" firstAttribute="top" secondItem="4WB-Nq-Gp6" secondAttribute="bottom" constant="39" id="Xt8-Mf-Fxd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRU-Bi-VRT" secondAttribute="trailing" constant="20" id="Y1L-qH-6aA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x5F-ju-Q0i" secondAttribute="trailing" constant="20" id="gVh-KB-WPC"/>
+                            <constraint firstItem="FRU-Bi-VRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iAc-WS-okO"/>
+                            <constraint firstItem="FRU-Bi-VRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nqE-VH-DAB"/>
+                            <constraint firstItem="4WB-Nq-Gp6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uOS-9u-Woo"/>
+                            <constraint firstItem="x5F-ju-Q0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zte-sM-Heb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Mag8Label" destination="FRU-Bi-VRT" id="nZU-d4-9cf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="1024" height="1024"/>
+    </resources>
 </document>
